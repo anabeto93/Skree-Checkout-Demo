@@ -41,6 +41,7 @@ class ProcessCheckoutController extends Controller
         ];
 
         $url = config('checkout.initiate');
+
         $headers = [
             'content-type' => 'application/json',
             'accept' => 'application/json',
@@ -48,6 +49,7 @@ class ProcessCheckoutController extends Controller
         ];
 
         $res = sendHttpRequest($url, $payload, $headers, 'json', 'POST');
+
         Log::debug("Checkout Response", ['response' => $res]);
 
         $response = ['error_code' => 500, 'message' => "Error Processing Request."];
