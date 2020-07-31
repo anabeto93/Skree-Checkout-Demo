@@ -70,6 +70,10 @@
                         <option value="GHS">GHS</option>
                         <option value="NGN">NGN</option>
                         <option value="USD">USD</option>
+                        <option value="AUD">AUD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
                     </select>
                 </div>
                 <button type="submit" class="btn btn-primary">Proceed To Checkout</button>

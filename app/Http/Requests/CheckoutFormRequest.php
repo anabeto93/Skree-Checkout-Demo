@@ -25,7 +25,7 @@ class CheckoutFormRequest extends FormRequest
     {
         return [
             'amount' => ['required', 'regex:/^\d+(\.\d+)?$/'],
-            'currency' => ['required', 'in:GHS,USD,NGN']
+            'currency' => ['required', 'in:GHS,USD,NGN,AUD,CAD,EUR,GBP']
         ];
     }
 }
