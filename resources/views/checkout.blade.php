@@ -61,7 +61,7 @@
                 @csrf
                 <div class="form-group">
                     <label for="amount">Amount</label>
-                    <input type="text" class="form-control" name="amount" id="amount" aria-describedby="amountHelp" pattern="^(GHS|NGN|USD)\s\d{1,3}(,\d{3})*(\.\d+)?$" value="{{ old('amount') }}" data-type="currency" placeholder="GHS 1,000,000.00" required autofocus>
+                    <input type="text" class="form-control" name="amount" id="amount" aria-describedby="amountHelp" pattern="^(GHS|NGN|USD|AUD|CAD|EUR|GBP)\s\d{1,3}(,\d{3})*(\.\d+)?$" value="{{ old('amount') }}" data-type="currency" placeholder="GHS 1,000,000.00" required autofocus>
                     <small id="amountHelp" class="form-text text-muted">Any valid amount between GHS 0.2 and GHS 100k</small>
                 </div>
                 <div class="form-group">
