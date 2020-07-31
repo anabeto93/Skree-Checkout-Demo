@@ -24,7 +24,7 @@ class CheckoutFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'amount' => ['required', 'regex:/^\d(\d{3})*(\.\d+)?$/'],
+            'amount' => ['required', 'regex:/^\d+(\.\d+)?$/'],
             'currency' => ['required', 'in:GHS,USD,NGN']
         ];
     }
